@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import 'views/home/home_view.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await LocatorInjector.setupLocator();
   runApp(MainApplication());
 }

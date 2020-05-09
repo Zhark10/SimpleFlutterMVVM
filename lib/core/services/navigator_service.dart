@@ -32,4 +32,8 @@ class NavigatorService extends BaseService {
     }
     navigatorKey.currentState.pop(result);
   }
+
+  // Future<T> navigateToCropImage<T>(image) async {
+  //   return await navigateToPage(MaterialPageRoute(builder: (context) => ImgCropWidget(image: image)));
+  // }
 }
