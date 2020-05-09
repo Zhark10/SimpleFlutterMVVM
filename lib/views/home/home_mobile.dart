@@ -8,24 +8,10 @@ class _HomeMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Mobile'),
-        backgroundColor: Colors.black,
-      ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times: ',
-              style: TextStyle(fontSize: 14),
-            ),
-            Text(
-              '${viewModel.counter}',
-              style: TextStyle(fontSize: 32.0),
-            ),
-          ],
-        ),
+        child: RaisedButton(onPressed: () {
+          
+        }),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),

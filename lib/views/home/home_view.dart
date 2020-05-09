@@ -14,7 +14,6 @@ class HomeView extends StatelessWidget {
       viewModel: viewModel,
       onModelReady: (viewModel) {
         // Do something once your viewModel is initialized
-        print('test');
       },
       builder: (context, viewModel, child) {
         return _HomeMobile(viewModel);
