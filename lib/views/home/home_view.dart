@@ -4,7 +4,7 @@ import 'package:provider_architecture/provider_architecture.dart';
 import 'package:flutter/material.dart';
 import 'home_view_model.dart';
 
-part 'home_mobile.dart';
+part 'home.dart';
 
 class HomeView extends StatelessWidget {
   @override
@@ -16,7 +16,7 @@ class HomeView extends StatelessWidget {
         // Do something once your viewModel is initialized
       },
       builder: (context, viewModel, child) {
-        return _HomeMobile(viewModel);
+        return _Home(viewModel);
       }
     );
   }

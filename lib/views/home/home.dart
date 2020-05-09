@@ -1,9 +1,9 @@
 part of home_view;
 
-class _HomeMobile extends StatelessWidget {
+class _Home extends StatelessWidget {
   final HomeViewModel viewModel;
 
-  _HomeMobile(this.viewModel);
+  _Home(this.viewModel);
 
   @override
   Widget build(BuildContext context) {
