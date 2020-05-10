@@ -2,6 +2,7 @@ part of home_view;
 
 class _Home extends StatelessWidget {
   final HomeViewModel viewModel;
+  final navigation = NavigatorService();
 
   _Home(this.viewModel);
 
@@ -9,7 +10,12 @@ class _Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        
+        child: FlatButton(
+          child: Text('POP'),
+          onPressed: () {
+            navigation.navigateToPage(MaterialPageRoute(builder: (context) => MapView()));
+          },
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),

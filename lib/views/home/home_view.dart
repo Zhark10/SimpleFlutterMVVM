@@ -1,5 +1,7 @@
 library home_view;
 
+import 'package:mvvm_simple_flutter/core/services/navigator_service.dart';
+import 'package:mvvm_simple_flutter/views/map/map_view.dart';
 import 'package:provider_architecture/provider_architecture.dart';
 import 'package:flutter/material.dart';
 import 'home_view_model.dart';

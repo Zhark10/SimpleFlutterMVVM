@@ -1,5 +1,4 @@
 import 'package:mvvm_simple_flutter/core/base/base_view_model.dart';
-
 class HomeViewModel extends BaseViewModel {
   int _counter;
 
@@ -10,6 +9,5 @@ class HomeViewModel extends BaseViewModel {
     this._counter = value;
     notifyListeners();
   }
-
   void increment() => this.counter += 1;
 }
