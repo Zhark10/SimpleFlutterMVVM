@@ -16,7 +16,7 @@ class NavigatorService extends BaseService {
   Future<T> navigateToPageWithReplacement<T>(
       MaterialPageRoute<T> pageRoute) async {
     log.i('navigateToPageWithReplacement: '
-      'pageRoute: ${pageRoute.settings.name}');
+        'pageRoute: ${pageRoute.settings.name}');
     if (navigatorKey.currentState == null) {
       log.e('navigateToPageWithReplacement: Navigator State is null');
       return null;
