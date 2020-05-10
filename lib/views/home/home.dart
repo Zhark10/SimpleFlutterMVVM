@@ -9,9 +9,7 @@ class _Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: RaisedButton(onPressed: () {
-          
-        }),
+        
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
