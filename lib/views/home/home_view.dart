@@ -1,6 +1,9 @@
 library home_view;
 
 import 'package:mvvm_simple_flutter/core/services/routes.dart';
+import 'package:mvvm_simple_flutter/resources/tab_icons.dart';
+import 'package:mvvm_simple_flutter/theme/app_theme.dart';
+import 'package:mvvm_simple_flutter/widgets/bottom-bar/bottom_bar.dart';
 import 'package:provider_architecture/provider_architecture.dart';
 import 'package:flutter/material.dart';
 import 'home_view_model.dart';
