@@ -9,19 +9,28 @@ class _Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child:
-            FlatButton(child: Text('Go to Map'), onPressed: navigation.goToMapView),
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        onPressed: viewModel.increment,
-        backgroundColor: Colors.black,
+      backgroundColor: Colors.transparent,
+      body: FutureBuilder<bool>(
+        future: viewModel.getData(),
+        builder: (BuildContext context, AsyncSnapshot<bool> snapshot) {
+          if (!snapshot.hasData) {
+            return const SizedBox();
+          } else {
+            return Stack(
+              children: <Widget>[
+                Container(
+                  color: AppTheme.background,
+                ),
+                bottomBar(),
+              ],
+            );
+          }
+        },
       ),
     );
   }
 
-   Widget bottomBar() {
+  Widget bottomBar() {
     return Column(
       children: <Widget>[
         const Expanded(
@@ -30,9 +39,7 @@ class _Home extends StatelessWidget {
         BottomBarView(
           tabIconsList: viewModel.tabIconsList,
           addClick: () {},
-          changeIndex: (int index) {
-            
-          },
+          changeIndex: (int index) {},
         ),
       ],
     );
