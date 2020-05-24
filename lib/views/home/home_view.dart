@@ -1,5 +1,6 @@
 library home_view;
 
+import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:mvvm_simple_flutter/core/services/routes.dart';
 import 'package:mvvm_simple_flutter/theme/app_theme.dart';
 import 'package:mvvm_simple_flutter/widgets/bottom-bar/bottom_bar.dart';

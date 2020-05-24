@@ -20,6 +20,13 @@ class _Home extends StatelessWidget {
               children: <Widget>[
                 Container(
                   color: AppTheme.background,
+                  child: GoogleMap(
+                    mapType: MapType.hybrid,
+                    initialCameraPosition: viewModel.kGooglePlex,
+                    onMapCreated: (GoogleMapController controller) {
+                      viewModel.mapController.complete(controller);
+                    },
+                  ),
                 ),
                 bottomBar(),
               ],
@@ -38,7 +45,7 @@ class _Home extends StatelessWidget {
         ),
         BottomBarView(
           tabIconsList: viewModel.tabIconsList,
-          addClick: () {},
+          addClick: viewModel.goToTheLake,
           changeIndex: (int index) {},
         ),
       ],
