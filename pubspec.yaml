@@ -15,6 +15,7 @@ dependencies:
     logger: ^0.7.0+2
     get_it: ^3.0.3
     equatable: ^1.0.1
+    google_maps_flutter: ^0.5.28+1
 dev_dependencies:
     flutter_test:
         sdk: flutter
